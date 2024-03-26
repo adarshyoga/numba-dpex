@@ -12,7 +12,7 @@
         gtag('js', new Date());
         gtag('config', 'G-LGGL0NJK6P');
     </script>
-    <link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" /><link rel="next" title="Universal Functions" href="ufunc.html" /><link rel="prev" title="Supported Address Space Qualifiers" href="memory_allocation_address_space.html" />
+    <link rel="index" title="Index" href="../../genindex.html" /><link rel="search" title="Search" href="../../search.html" />
 
     <!-- Generated with Sphinx 7.2.6 and Furo 2024.01.29 -->
         <title>Reduction on SYCL-supported Devices - numba-dpex documentation</title>
@@ -165,27 +165,16 @@
   <input type="hidden" name="area" value="default">
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
-  <ul class="current">
+  <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../overview.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../getting_started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../programming_model.html">Programming Model</a></li>
-<li class="toctree-l1 current has-children"><a class="reference internal" href="../index.html">Tutorials</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Tutorials</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l2 current has-children"><a class="reference internal" href="index.html">Kernel Programming Basics</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Kernel Programming Basics</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="writing_kernels.html">Writing Data Parallel Kernels</a></li>
-<li class="toctree-l3"><a class="reference internal" href="synchronization.html">Synchronization Functions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="device-functions.html">Writing Device Functions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="atomic-operations.html">Supported Atomic Operations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="memory_allocation_address_space.html">Supported Address Space Qualifiers</a></li>
-<li class="toctree-l3 current current-page"><a class="current reference internal" href="#">Reduction on SYCL-supported Devices</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ufunc.html">Universal Functions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="supported-python-features.html">Supported Python Features inside <code class="docutils literal notranslate"><span class="pre">numba_dpex.kernel</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../dpnp_offload.html">Compiling and Offloading <code class="docutils literal notranslate"><span class="pre">dpnp</span></code> statements</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../debugging/index.html">Debugging with Intel® Distribution for GDB*</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of Debugging with Intel® Distribution for GDB*</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../index.html">Tutorials</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Tutorials</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="index.html">Kernel Programming</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../debugging/index.html">Debugging with Intel® Distribution for GDB*</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" role="switch" type="checkbox"/><label for="toctree-checkbox-2"><div class="visually-hidden">Toggle navigation of Debugging with Intel® Distribution for GDB*</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../debugging/set_up_machine.html">Set up the machine for debugging</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../debugging/debugging_environment.html">Configure debugging environment</a></li>
-<li class="toctree-l3 has-children"><a class="reference internal" href="../debugging/features.html">Supported Features</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of Supported Features</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../debugging/features.html">Supported Features</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle navigation of Supported Features</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l4"><a class="reference internal" href="../debugging/breakpoints.html">Breakpoints</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../debugging/stepping.html">Stepping</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../debugging/frame_info.html">Information About a Frame</a></li>
@@ -204,20 +193,13 @@
 <li class="toctree-l2"><a class="reference internal" href="../config.html">Configuration Options for <code class="docutils literal notranslate"><span class="pre">numba-dpex</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../autoapi/index.html">API Reference</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" role="switch" type="checkbox"/><label for="toctree-checkbox-5"><div class="visually-hidden">Toggle navigation of API Reference</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../autoapi/numba_dpex/kernel_api/index.html">numba_dpex.kernel_api</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" role="switch" type="checkbox"/><label for="toctree-checkbox-6"><div class="visually-hidden">Toggle navigation of numba_dpex.kernel_api</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../autoapi/numba_dpex/kernel_api/atomic_fence/index.html">numba_dpex.kernel_api.atomic_fence</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../autoapi/numba_dpex/kernel_api/atomic_ref/index.html">numba_dpex.kernel_api.atomic_ref</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../autoapi/numba_dpex/kernel_api/barrier/index.html">numba_dpex.kernel_api.barrier</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../autoapi/numba_dpex/kernel_api/flag_enum/index.html">numba_dpex.kernel_api.flag_enum</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../autoapi/numba_dpex/kernel_api/index_space_ids/index.html">numba_dpex.kernel_api.index_space_ids</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../autoapi/numba_dpex/kernel_api/launcher/index.html">numba_dpex.kernel_api.launcher</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../autoapi/numba_dpex/kernel_api/memory_enums/index.html">numba_dpex.kernel_api.memory_enums</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../autoapi/numba_dpex/kernel_api/ranges/index.html">numba_dpex.kernel_api.ranges</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../autoapi/index.html">API Reference</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" role="switch" type="checkbox"/><label for="toctree-checkbox-4"><div class="visually-hidden">Toggle navigation of API Reference</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../autoapi/numba_dpex/kernel_api/index.html">numba_dpex.kernel_api</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../autoapi/numba_dpex/core/decorators/index.html">numba_dpex.core.decorators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../autoapi/numba_dpex/core/kernel_launcher/index.html">numba_dpex.core.kernel_launcher</a></li>
 </ul>
 </li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../../experimental/index.html">Experimental Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../useful_links.html">Useful links</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Development</span></p>
@@ -227,7 +209,6 @@
 <p class="caption" role="heading"><span class="caption-text">Misc Notes</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../examples.html">List of examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../glossary.html">Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../license.html">License</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../release-notes.html">Release Notes</a></li>
 </ul>
@@ -275,110 +256,11 @@ section provides two approaches for writing a reduction kernel as a
 <p>This example demonstrates a summation reduction on a one-dimensional array.</p>
 <p>Full example can be found at <code class="docutils literal notranslate"><span class="pre">numba_dpex/examples/sum_reduction.py</span></code>.</p>
 <p>In this example, to reduce the array we invoke the kernel multiple times.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@ndpx</span><span class="o">.</span><span class="n">kernel</span>
-<span class="k">def</span> <span class="nf">sum_reduction_kernel</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="n">stride</span><span class="p">):</span>
-    <span class="n">i</span> <span class="o">=</span> <span class="n">ndpx</span><span class="o">.</span><span class="n">get_global_id</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-    <span class="c1"># sum two element</span>
-    <span class="n">R</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="n">stride</span><span class="p">]</span>
-    <span class="c1"># store the sum to be used in nex iteration</span>
-    <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">R</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sum_reduce</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">&quot;&quot;&quot;Size of A should be power of two.&quot;&quot;&quot;</span>
-    <span class="n">total</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-    <span class="c1"># max size will require half the size of A to store sum</span>
-    <span class="n">R</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">total</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)),</span> <span class="n">dtype</span><span class="o">=</span><span class="n">A</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
-
-    <span class="k">while</span> <span class="n">total</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
-        <span class="n">global_size</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">total</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
-        <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">-</span> <span class="n">global_size</span>
-        <span class="n">sum_reduction_kernel</span><span class="p">[</span><span class="n">ndpx</span><span class="o">.</span><span class="n">Range</span><span class="p">(</span><span class="n">global_size</span><span class="p">)](</span><span class="n">A</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="n">total</span><span class="p">)</span>
-
-    <span class="k">return</span> <span class="n">R</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-</pre></div>
-</div>
 </section>
 <section id="example-2">
 <h2>Example 2<a class="headerlink" href="#example-2" title="Link to this heading">#</a></h2>
 <p>Full example can be found at
 <code class="docutils literal notranslate"><span class="pre">numba_dpex/examples/sum_reduction_recursive_ocl.py</span></code>.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@ndpx</span><span class="o">.</span><span class="n">kernel</span>
-<span class="k">def</span> <span class="nf">sum_reduction_kernel</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">input_size</span><span class="p">,</span> <span class="n">partial_sums</span><span class="p">):</span>
-    <span class="n">local_id</span> <span class="o">=</span> <span class="n">ndpx</span><span class="o">.</span><span class="n">get_local_id</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-    <span class="n">global_id</span> <span class="o">=</span> <span class="n">ndpx</span><span class="o">.</span><span class="n">get_global_id</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-    <span class="n">group_size</span> <span class="o">=</span> <span class="n">ndpx</span><span class="o">.</span><span class="n">get_local_size</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-    <span class="n">group_id</span> <span class="o">=</span> <span class="n">ndpx</span><span class="o">.</span><span class="n">get_group_id</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-
-    <span class="n">local_sums</span> <span class="o">=</span> <span class="n">ndpx</span><span class="o">.</span><span class="n">local</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="mi">64</span><span class="p">,</span> <span class="n">int32</span><span class="p">)</span>
-
-    <span class="n">local_sums</span><span class="p">[</span><span class="n">local_id</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
-
-    <span class="k">if</span> <span class="n">global_id</span> <span class="o">&lt;</span> <span class="n">input_size</span><span class="p">:</span>
-        <span class="n">local_sums</span><span class="p">[</span><span class="n">local_id</span><span class="p">]</span> <span class="o">=</span> <span class="n">A</span><span class="p">[</span><span class="n">global_id</span><span class="p">]</span>
-
-    <span class="c1"># Loop for computing local_sums : divide workgroup into 2 parts</span>
-    <span class="n">stride</span> <span class="o">=</span> <span class="n">group_size</span> <span class="o">//</span> <span class="mi">2</span>
-    <span class="k">while</span> <span class="n">stride</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="c1"># Waiting for each 2x2 addition into given workgroup</span>
-        <span class="n">ndpx</span><span class="o">.</span><span class="n">barrier</span><span class="p">(</span><span class="n">ndpx</span><span class="o">.</span><span class="n">LOCAL_MEM_FENCE</span><span class="p">)</span>
-
-        <span class="c1"># Add elements 2 by 2 between local_id and local_id + stride</span>
-        <span class="k">if</span> <span class="n">local_id</span> <span class="o">&lt;</span> <span class="n">stride</span><span class="p">:</span>
-            <span class="n">local_sums</span><span class="p">[</span><span class="n">local_id</span><span class="p">]</span> <span class="o">+=</span> <span class="n">local_sums</span><span class="p">[</span><span class="n">local_id</span> <span class="o">+</span> <span class="n">stride</span><span class="p">]</span>
-
-        <span class="n">stride</span> <span class="o">&gt;&gt;=</span> <span class="mi">1</span>
-
-    <span class="k">if</span> <span class="n">local_id</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="n">partial_sums</span><span class="p">[</span><span class="n">group_id</span><span class="p">]</span> <span class="o">=</span> <span class="n">local_sums</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sum_recursive_reduction</span><span class="p">(</span><span class="n">size</span><span class="p">,</span> <span class="n">group_size</span><span class="p">,</span> <span class="n">Dinp</span><span class="p">,</span> <span class="n">Dpartial_sums</span><span class="p">):</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">nb_work_groups</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="n">passed_size</span> <span class="o">=</span> <span class="n">size</span>
-
-    <span class="k">if</span> <span class="n">size</span> <span class="o">&lt;=</span> <span class="n">group_size</span><span class="p">:</span>
-        <span class="n">nb_work_groups</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">nb_work_groups</span> <span class="o">=</span> <span class="n">size</span> <span class="o">//</span> <span class="n">group_size</span>
-        <span class="k">if</span> <span class="n">size</span> <span class="o">%</span> <span class="n">group_size</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="n">nb_work_groups</span> <span class="o">+=</span> <span class="mi">1</span>
-            <span class="n">passed_size</span> <span class="o">=</span> <span class="n">nb_work_groups</span> <span class="o">*</span> <span class="n">group_size</span>
-
-    <span class="n">gr</span> <span class="o">=</span> <span class="n">ndpx</span><span class="o">.</span><span class="n">Range</span><span class="p">(</span><span class="n">passed_size</span><span class="p">)</span>
-    <span class="n">lr</span> <span class="o">=</span> <span class="n">ndpx</span><span class="o">.</span><span class="n">Range</span><span class="p">(</span><span class="n">group_size</span><span class="p">)</span>
-
-    <span class="n">sum_reduction_kernel</span><span class="p">[</span><span class="n">ndpx</span><span class="o">.</span><span class="n">NdRange</span><span class="p">(</span><span class="n">gr</span><span class="p">,</span> <span class="n">lr</span><span class="p">)](</span><span class="n">Dinp</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="n">Dpartial_sums</span><span class="p">)</span>
-
-    <span class="k">if</span> <span class="n">nb_work_groups</span> <span class="o">&lt;=</span> <span class="n">group_size</span><span class="p">:</span>
-        <span class="n">sum_reduction_kernel</span><span class="p">[</span><span class="n">ndpx</span><span class="o">.</span><span class="n">NdRange</span><span class="p">(</span><span class="n">lr</span><span class="p">,</span> <span class="n">lr</span><span class="p">)](</span>
-            <span class="n">Dpartial_sums</span><span class="p">,</span> <span class="n">nb_work_groups</span><span class="p">,</span> <span class="n">Dinp</span>
-        <span class="p">)</span>
-        <span class="n">result</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">Dinp</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">result</span> <span class="o">=</span> <span class="n">sum_recursive_reduction</span><span class="p">(</span>
-            <span class="n">nb_work_groups</span><span class="p">,</span> <span class="n">group_size</span><span class="p">,</span> <span class="n">Dpartial_sums</span><span class="p">,</span> <span class="n">Dinp</span>
-        <span class="p">)</span>
-
-    <span class="k">return</span> <span class="n">result</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">sum_reduce</span><span class="p">(</span><span class="n">A</span><span class="p">):</span>
-    <span class="n">global_size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
-    <span class="n">work_group_size</span> <span class="o">=</span> <span class="mi">64</span>
-    <span class="n">nb_work_groups</span> <span class="o">=</span> <span class="n">global_size</span> <span class="o">//</span> <span class="n">work_group_size</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">global_size</span> <span class="o">%</span> <span class="n">work_group_size</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="n">nb_work_groups</span> <span class="o">+=</span> <span class="mi">1</span>
-
-    <span class="n">partial_sums</span> <span class="o">=</span> <span class="n">dpt</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">nb_work_groups</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">A</span><span class="o">.</span><span class="n">dtype</span><span class="p">,</span> <span class="n">device</span><span class="o">=</span><span class="n">A</span><span class="o">.</span><span class="n">device</span><span class="p">)</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="n">sum_recursive_reduction</span><span class="p">(</span>
-        <span class="n">global_size</span><span class="p">,</span> <span class="n">work_group_size</span><span class="p">,</span> <span class="n">A</span><span class="p">,</span> <span class="n">partial_sums</span>
-    <span class="p">)</span>
-
-    <span class="k">return</span> <span class="n">result</span>
-</pre></div>
-</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Numba-dpex does not yet provide any analogue to the <code class="docutils literal notranslate"><span class="pre">numba.cuda.reduce</span></code>
@@ -401,26 +283,8 @@ future releases.</p>
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="ufunc.html">
-              <div class="page-info">
-                <div class="context">
-                  <span>Next</span>
-                </div>
-                <div class="title">Universal Functions</div>
-              </div>
-              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
-            </a>
-          <a class="prev-page" href="memory_allocation_address_space.html">
-              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
-              <div class="page-info">
-                <div class="context">
-                  <span>Previous</span>
-                </div>
-                
-                <div class="title">Supported Address Space Qualifiers</div>
-                
-              </div>
-            </a>
+          
+          
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
