@@ -1,4 +1,5 @@
 
+
 :orphan:
 
 numba_dpex.core.parfors.kernel_builder
@@ -7,9 +8,10 @@ numba_dpex.core.parfors.kernel_builder
 .. py:module:: numba_dpex.core.parfors.kernel_builder
 
 
+
+
 Overview
 --------
-
 .. list-table:: Classes
    :header-rows: 0
    :widths: auto
@@ -34,7 +36,7 @@ Overview
 Classes
 -------
 
-.. py:class:: ParforKernel(name, kernel, signature, kernel_args, kernel_arg_types, queue: dpctl.SyclQueue)
+.. py:class:: ParforKernel(name, kernel, signature, kernel_args, kernel_arg_types, queue: dpctl.SyclQueue, local_accessors=None, work_group_size=None)
 
 
 

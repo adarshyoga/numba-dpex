@@ -1,4 +1,5 @@
 
+
 :orphan:
 
 numba_dpex.core.datamodel.models
@@ -7,9 +8,10 @@ numba_dpex.core.datamodel.models
 .. py:module:: numba_dpex.core.datamodel.models
 
 
+
+
 Overview
 --------
-
 .. list-table:: Classes
    :header-rows: 0
    :widths: auto
@@ -56,6 +58,8 @@ Overview
    :class: summarytable
 
    * - :py:obj:`dpex_data_model_manager <numba_dpex.core.datamodel.models.dpex_data_model_manager>`
+     - \-
+   * - :py:obj:`dpjit_data_model_manager <numba_dpex.core.datamodel.models.dpjit_data_model_manager>`
      - \-
 
 
@@ -233,6 +237,10 @@ Functions
 Attributes
 ----------
 .. py:data:: dpex_data_model_manager
+
+   
+
+.. py:data:: dpjit_data_model_manager
 
    
 
